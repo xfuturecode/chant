@@ -1,0 +1,296 @@
+<!-- Header avec recherche et filtres -->
+<div class="d-flex justify-content-between align-items-center mb-4">
+  <h2><i class="fas fa-music me-2"></i>Bibliothèque de Chants</h2>
+  <div class="d-flex gap-2">
+    <select class="form-select" id="filter-type">
+      <option value="">Tous les types</option>
+      <option value="louange">Louange</option>
+      <option value="adoration">Adoration</option>
+      <option value="remerciement">Remerciement</option>
+      <option value="priere">Prière</option>
+      <option value="gospel">Gospel</option>
+    </select>
+    <select class="form-select" id="sort-by">
+      <option value="titre">Trier par titre</option>
+      <option value="auteur">Trier par auteur</option>
+      <option value="type">Trier par type</option>
+      <option value="recent">Plus récents</option>
+    </select>
+  </div>
+</div>
+
+<!-- Barre de recherche -->
+<div class="search-box mb-4">
+  <div class="input-group">
+    <span class="input-group-text"><i class="fas fa-search"></i></span>
+    <input type="text" class="form-control" id="recherche-chant" placeholder="Rechercher par titre, auteur, paroles...">
+    <button class="btn btn-outline-secondary" type="button">
+      <i class="fas fa-filter me-1"></i>Filtres avancés
+    </button>
+  </div>
+</div>
+
+<!-- Statistiques rapides -->
+<div class="row mb-4">
+  <div class="col-md-3">
+    <div class="card text-center">
+      <div class="card-body">
+        <h4 class="text-primary">150</h4>
+        <small class="text-muted">Total chants</small>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card text-center">
+      <div class="card-body">
+        <h4 class="text-success">25</h4>
+        <small class="text-muted">Auteurs</small>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card text-center">
+      <div class="card-body">
+        <h4 class="text-warning">5</h4>
+        <small class="text-muted">Types</small>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card text-center">
+      <div class="card-body">
+        <h4 class="text-info">52</h4>
+        <small class="text-muted">Dimanches</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Liste des chants -->
+<div id="liste-chants" class="row">
+  <!-- Chant 1 -->
+  <div class="col-md-6 col-lg-4 mb-4 fade-in">
+    <div class="chant-card">
+      <div class="d-flex justify-content-between align-items-start mb-3">
+        <div>
+          <h5 class="chant-title">Hosanna</h5>
+          <p class="chant-author">Par Hillsong Worship</p>
+        </div>
+        <span class="chant-type">Louange</span>
+      </div>
+      
+      <p class="text-muted mb-3">Un chant de louange puissant qui célèbre la grandeur de Dieu...</p>
+      
+      <div class="mb-3">
+        <small class="text-muted">
+          <i class="fas fa-calendar me-1"></i>Ajouté le 15 Mai 2024
+        </small>
+      </div>
+      
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <button class="btn btn-primary btn-sm me-2">
+            <i class="fas fa-play me-1"></i>Écouter
+          </button>
+          <button class="btn btn-outline-primary btn-sm me-2">
+            <i class="fas fa-file-pdf me-1"></i>Partition
+          </button>
+        </div>
+        <a href="/chant/hosanna" class="btn btn-outline-secondary btn-sm">
+          <i class="fas fa-eye me-1"></i>Détails
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chant 2 -->
+  <div class="col-md-6 col-lg-4 mb-4 fade-in">
+    <div class="chant-card">
+      <div class="d-flex justify-content-between align-items-start mb-3">
+        <div>
+          <h5 class="chant-title">Amazing Grace</h5>
+          <p class="chant-author">Par John Newton</p>
+        </div>
+        <span class="chant-type">Adoration</span>
+      </div>
+      
+      <p class="text-muted mb-3">Un hymne classique qui parle de la grâce merveilleuse de Dieu...</p>
+      
+      <div class="mb-3">
+        <small class="text-muted">
+          <i class="fas fa-calendar me-1"></i>Ajouté le 10 Mai 2024
+        </small>
+      </div>
+      
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <button class="btn btn-primary btn-sm me-2">
+            <i class="fas fa-play me-1"></i>Écouter
+          </button>
+          <button class="btn btn-outline-primary btn-sm me-2">
+            <i class="fas fa-file-pdf me-1"></i>Partition
+          </button>
+        </div>
+        <a href="/chant/amazing-grace" class="btn btn-outline-secondary btn-sm">
+          <i class="fas fa-eye me-1"></i>Détails
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chant 3 -->
+  <div class="col-md-6 col-lg-4 mb-4 fade-in">
+    <div class="chant-card">
+      <div class="d-flex justify-content-between align-items-start mb-3">
+        <div>
+          <h5 class="chant-title">How Great Thou Art</h5>
+          <p class="chant-author">Par Carl Boberg</p>
+        </div>
+        <span class="chant-type">Adoration</span>
+      </div>
+      
+      <p class="text-muted mb-3">Un hymne magnifique qui exalte la grandeur de notre Dieu...</p>
+      
+      <div class="mb-3">
+        <small class="text-muted">
+          <i class="fas fa-calendar me-1"></i>Ajouté le 8 Mai 2024
+        </small>
+      </div>
+      
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <button class="btn btn-primary btn-sm me-2">
+            <i class="fas fa-play me-1"></i>Écouter
+          </button>
+          <button class="btn btn-outline-primary btn-sm me-2">
+            <i class="fas fa-file-pdf me-1"></i>Partition
+          </button>
+        </div>
+        <a href="/chant/how-great-thou-art" class="btn btn-outline-secondary btn-sm">
+          <i class="fas fa-eye me-1"></i>Détails
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chant 4 -->
+  <div class="col-md-6 col-lg-4 mb-4 fade-in">
+    <div class="chant-card">
+      <div class="d-flex justify-content-between align-items-start mb-3">
+        <div>
+          <h5 class="chant-title">What a Beautiful Name</h5>
+          <p class="chant-author">Par Hillsong Worship</p>
+        </div>
+        <span class="chant-type">Louange</span>
+      </div>
+      
+      <p class="text-muted mb-3">Un chant moderne qui célèbre le nom merveilleux de Jésus...</p>
+      
+      <div class="mb-3">
+        <small class="text-muted">
+          <i class="fas fa-calendar me-1"></i>Ajouté le 5 Mai 2024
+        </small>
+      </div>
+      
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <button class="btn btn-primary btn-sm me-2">
+            <i class="fas fa-play me-1"></i>Écouter
+          </button>
+          <button class="btn btn-outline-primary btn-sm me-2">
+            <i class="fas fa-file-pdf me-1"></i>Partition
+          </button>
+        </div>
+        <a href="/chant/what-a-beautiful-name" class="btn btn-outline-secondary btn-sm">
+          <i class="fas fa-eye me-1"></i>Détails
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chant 5 -->
+  <div class="col-md-6 col-lg-4 mb-4 fade-in">
+    <div class="chant-card">
+      <div class="d-flex justify-content-between align-items-start mb-3">
+        <div>
+          <h5 class="chant-title">Goodness of God</h5>
+          <p class="chant-author">Par Bethel Music</p>
+        </div>
+        <span class="chant-type">Remerciement</span>
+      </div>
+      
+      <p class="text-muted mb-3">Un chant de reconnaissance pour la bonté de Dieu dans nos vies...</p>
+      
+      <div class="mb-3">
+        <small class="text-muted">
+          <i class="fas fa-calendar me-1"></i>Ajouté le 3 Mai 2024
+        </small>
+      </div>
+      
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <button class="btn btn-primary btn-sm me-2">
+            <i class="fas fa-play me-1"></i>Écouter
+          </button>
+          <button class="btn btn-outline-primary btn-sm me-2">
+            <i class="fas fa-file-pdf me-1"></i>Partition
+          </button>
+        </div>
+        <a href="/chant/goodness-of-god" class="btn btn-outline-secondary btn-sm">
+          <i class="fas fa-eye me-1"></i>Détails
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chant 6 -->
+  <div class="col-md-6 col-lg-4 mb-4 fade-in">
+    <div class="chant-card">
+      <div class="d-flex justify-content-between align-items-start mb-3">
+        <div>
+          <h5 class="chant-title">Reckless Love</h5>
+          <p class="chant-author">Par Cory Asbury</p>
+        </div>
+        <span class="chant-type">Adoration</span>
+      </div>
+      
+      <p class="text-muted mb-3">Un chant qui parle de l'amour inconditionnel de Dieu pour nous...</p>
+      
+      <div class="mb-3">
+        <small class="text-muted">
+          <i class="fas fa-calendar me-1"></i>Ajouté le 1 Mai 2024
+        </small>
+      </div>
+      
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <button class="btn btn-primary btn-sm me-2">
+            <i class="fas fa-play me-1"></i>Écouter
+          </button>
+          <button class="btn btn-outline-primary btn-sm me-2">
+            <i class="fas fa-file-pdf me-1"></i>Partition
+          </button>
+        </div>
+        <a href="/chant/reckless-love" class="btn btn-outline-secondary btn-sm">
+          <i class="fas fa-eye me-1"></i>Détails
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Pagination -->
+<nav aria-label="Navigation des chants" class="mt-4">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">Précédent</a>
+    </li>
+    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">4</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Suivant</a>
+    </li>
+  </ul>
+</nav>
