@@ -1,3 +1,77 @@
+@media (max-width: 767.98px) {
+  #liste-chants > .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  #liste-dimanches > .col-md-6,
+  #liste-dimanches > .col-lg-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+/* Responsive header and filters for dimanches.html */
+@media (max-width: 767.98px) {
+  .d-flex.justify-content-between.align-items-center.mb-4.m-6 {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.5rem !important;
+    margin-bottom: 1.2rem !important;
+  }
+  .d-flex.gap-2 {
+    width: 100%;
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+  }
+  .form-select, #btn-filtres {
+    width: 100%;
+    min-width: 0;
+  }
+  .search-box .input-group {
+    flex-direction: row;
+    width: 100%;
+  }
+  .search-box input.form-control {
+    min-width: 0;
+    width: 100%;
+  }
+  h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+}
+/* Centrage et marges personnalisées pour la page dimanches */
+.container.my-5 {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 32px 24px;
+}
+
+@media (max-width: 767.98px) {
+  .container.my-5 {
+    max-width: 100%;
+    padding: 12px 2vw;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .card {
+    margin-bottom: 18px;
+  }
+  .pagination {
+    font-size: 0.95rem;
+  }
+  .mb-4 {
+    margin-bottom: 1rem!important;
+  }
+}
+}
 /* Variables CSS pour une cohérence des couleurs */
 :root {
   --primary-color: #2c5aa0;
@@ -11,6 +85,7 @@
   --box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+
 /* Styles généraux */
 body { 
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -23,10 +98,18 @@ body {
 .navbar {
   background: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   box-shadow: var(--box-shadow);
   border-bottom: 1px solid rgba(0,0,0,0.1);
+  z-index: 1000;
 }
 
+.elements {
+  margin: 10px;
+}
 .navbar-brand { 
   font-weight: bold;
   color: var(--primary-color) !important;
